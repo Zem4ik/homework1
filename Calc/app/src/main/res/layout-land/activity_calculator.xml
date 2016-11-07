@@ -1,7 +1,174 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:id="@+id/history_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/output_history"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/result_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/output_result"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+    </HorizontalScrollView>
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="@color/colorPrimary"
+        app:columnCount="5"
+        app:rowCount="4">
+
+
+        <Button
+            android:id="@+id/d7"
+            style="@style/Button"
+            android:text="@string/d7"
+            android:textSize="@dimen/land_size" />
+
+        <Button
+            android:id="@+id/d8"
+            style="@style/Button"
+            android:text="@string/d8"
+            android:textSize="@dimen/land_size" />
+
+        <Button
+            android:id="@+id/d9"
+            style="@style/Button"
+            android:text="@string/d9"
+            android:textSize="@dimen/land_size" />
+
+        <Button
+            android:id="@+id/clear"
+            style="@style/Button"
+            android:text="@string/clear"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/delete_one_symbol"
+            style="@style/Button"
+            android:text="@string/delete_one_symbol"
+            android:textSize="@dimen/land_size" />
+
+        <Button
+            android:id="@+id/d4"
+            style="@style/Button"
+            android:text="@string/d4"
+            android:textSize="@dimen/land_size" />
+
+        <Button
+            android:id="@+id/d5"
+            style="@style/Button"
+            android:text="@string/d5"
+            android:textSize="@dimen/land_size" />
+
+        <Button
+            android:id="@+id/d6"
+            style="@style/Button"
+            android:text="@string/d6"
+            android:textSize="@dimen/land_size" />
+
+        <Button
+            android:id="@+id/mul"
+            style="@style/Button"
+            android:text="@string/mul"
+            android:textSize="@dimen/land_size" />
+
+        <Button
+            android:id="@+id/div"
+            style="@style/Button"
+            android:text="@string/div"
+            android:textSize="@dimen/land_size" />
+
+        <Button
+            android:id="@+id/d1"
+            style="@style/Button"
+            android:text="@string/d1"
+            android:textSize="@dimen/land_size" />
+
+        <Button
+            android:id="@+id/d2"
+            style="@style/Button"
+            android:text="@string/d2"
+            android:textSize="@dimen/land_size" />
+
+        <Button
+            android:id="@+id/d3"
+            style="@style/Button"
+            android:text="@string/d3"
+            android:textSize="@dimen/land_size" />
+
+        <Button
+            android:id="@+id/add"
+            style="@style/Button"
+            android:text="@string/add"
+            android:textSize="@dimen/land_size" />
+
+        <Button
+            android:id="@+id/sub"
+            style="@style/Button"
+            android:text="@string/sub"
+            android:textSize="@dimen/land_size" />
+
+
+        <Button
+            android:id="@+id/d0"
+            style="@style/Button"
+            android:text="@string/d0"
+            android:textSize="@dimen/land_size" />
+
+        <Button
+            android:id="@+id/plus_minus"
+            style="@style/Button"
+            android:text="@string/plus_minus"
+            android:textSize="@dimen/land_size" />
+
+        <Button
+            android:id="@+id/dot"
+            style="@style/Button"
+            android:text="@string/dot"
+            android:textSize="@dimen/land_size" />
+
+        <Button
+            android:id="@+id/exponential"
+            style="@style/Button"
+            android:text="@string/exponential"
+            android:textSize="@dimen/land_size" />
+
+        <Button
+            android:id="@+id/result"
+            style="@style/Button"
+            android:text="@string/result"
+            android:textSize="@dimen/land_size" />
+
+
+    </android.support.v7.widget.GridLayout>
 
 </LinearLayout>
