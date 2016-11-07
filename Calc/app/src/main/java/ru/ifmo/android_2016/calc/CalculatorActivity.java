@@ -88,6 +88,15 @@ public final class CalculatorActivity extends Activity {
             case (R.id.div):
             case (R.id.sub):
             case (R.id.add):
+                try {
+                    Double.parseDouble(current_number.toString());
+                } catch (NumberFormatException e) {
+                    clear();
+                    current_number.append("Wrong number format");
+                    err_flag = true;
+                    update_screen();
+                    return;
+                }
                 Button button = (Button) v;
                 if (current_number.length() == 0 && output_history.getText().length() != 0) {
                     sign = button.getText().charAt(0);
